@@ -4,6 +4,13 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    color:#e5e7eb;
+    background-color: rgb(23 23 23);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 150vh;
 }
 
 header {
@@ -11,10 +18,11 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 2rem;
-    border: 2px solid #222;
+    border: 2px solid #e5e7eb;
     margin: 2rem auto 0 auto;
     max-width: 900px;
-    background: #fff;
+    background: rgb(23 23 23);
+    break-inside: avoid;
 }
 
 .logo img {
@@ -30,57 +38,48 @@ header {
     display: flex;
     gap: 2rem;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
 }
 
 .nav-links a {
     text-decoration: none;
-    color: #222;
+    color: #e5e7eb;
     font-size: 1.5rem;
     font-family: 'Roboto', sans-serif;  
 }
 
-.nav-links a:not(:last-child)::after {
-    content: "/";
-    margin-left: 2rem;
-    color: #000;
-}
+.intro {
+    border-bottom: 2px solid #e5e7eb;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    padding: 2rem 0;
 
-body {
-    font-family: 'Roboto', sans-serif;
-    min-height: 120vh;
 }
 
 main {
     max-width: 900px;
     margin: 0 auto;
-    border: 2px solid #222;
-    background: #fff;
+    border: 2px solid #e5e7eb;
+    background: #171717;
     padding-bottom: 2rem;
 }
 
-.intro {
-    text-align: center;
-    padding: 2rem 0;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-    border-bottom: 2px solid #222;
+.sy {
+    border-top: 2px solid #e5e7eb;
+    padding: 1rem;
 }
 
 .main-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #e5e7eb;
 }
 
 .projects, .work-experience, .education {
-    border-right: 2px solid #222;
-    padding: 1.5rem;
-    min-height: 220px;
+    border-right: 2px solid #e5e7eb;
+    padding: 1.5rem 1.5rem;
+    min-height: /* 220px */unset;
 }
-
-.projects { border-left: none; }
 
 .education { border-right: none; }
 
@@ -97,15 +96,15 @@ main {
 }
 
 .reviews blockquote  {
-    border: 2px solid #222;
+    border: 2px solid #e5e7eb;
     border-radius: 20px;
     padding: 1rem 2rem;
     margin: 0 1rem 1rem 0;
     font-size: 1rem;
-    color: #222;
+    color: #e5e7eb;
 }
 
-.aside footer {
+.end-note, footer {
     display: flex;
     justify-content: center;
     color: azure;
